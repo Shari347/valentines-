@@ -90,7 +90,7 @@
             const yourName = document.getElementById('yourName').value;
             const baeName = document.getElementById('baeName').value;
 
-            const link = `https://shari.github.io/shari/valentine.html?from=${encodeURIComponent(yourName)}&to=${encodeURIComponent(baeName)}`;
+            const link = `${window.location.origin}${window.location.pathname.replace('index.html','')}valentine.html?from=${encodeURIComponent(yourName)}&to=${encodeURIComponent(baeName)}`;
 
             document.getElementById('linkField').value = link;
         }
